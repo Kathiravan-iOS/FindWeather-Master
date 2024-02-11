@@ -5,34 +5,53 @@
 Find Weather
 "Find Weather" is an iOS app designed to provide users with up-to-date weather information based on their current location or any location they choose to search for. The app utilises location services and integrates with a weather API to fetch accurate and real-time weather data.
 Features
+
 ● Current Location Weather:
+
 ● Displays the current weather conditions at the user's location upon app launch.
+
 ● Search by Location:
+
 ● Allows users to search for weather information in any location worldwide by providing latitude
 and longitude.
+
 Architecture
 The app is built following the MVVM (Model-View-ViewModel) architecture, promoting modularity and maintainability. Dependency injection is implemented to enhance component integration.
+
 Third-Party Libraries
 ● Kingfisher:
+
 ● Efficiently loads and caches weather-related images for a visually appealing experience.
+
 ● NVActivityIndicatorView:
+
 ● Integrates smooth loading indicators, enhancing the user interface during data retrieval.
+
 ● ReachabilitySwift:
+
 ● Monitors network reachability to ensure responsiveness and timely weather updates.
+
+
 Functionality
-● Correctness:
+Correctness:
 ● Thorough testing ensures accurate weather information retrieval and display.
-● Adherence to Best Practices:
+
+Adherence to Best Practices:
 ● Follows the MVVM design pattern for structured development.
-● Code Quality and Readability:
+
+Code Quality and Readability:
 ● Emphasis on clean, high-quality, and readable code for ease of collaboration.
- ● Error Handling:
-● Robust error handling mechanisms guarantee a stable user experience.
-● UI/UX Design:
+
+Error Handling:
+● Robust error handling mechanisms guarantee a stable user experience. 
+
+UI/UX Design:
 ● User-centric design for an intuitive and visually appealing weather app.
+
 Code Comments
 ● Clear and concise code comments are provided throughout the implementation, explaining key aspects of the codebase for better understanding.
 Handling Complicated API Responses
+
 The "Find Weather" app interacts with a weather API that delivers responses in different formats based on the type of information requested. To handle these variations, the app employs a robust model class structure and custom serialization methods.
 Model Classes
 WeatherInfoModel
